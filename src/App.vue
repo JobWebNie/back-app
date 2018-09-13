@@ -1,10 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  
+    <HelloWorld msg="移动端 常用组件"/>
     <Login />
     <Layout />
+    <Tabbar v-model="select" v-on:tapTabItem="addLister">
+        <TabItem id='tab1'>
+            <img slot="icon" src="./assets/images/1.png" alt="商品图片">
+            外卖
+        </TabItem>
+         <TabItem id='tab2'>
+            <img slot="icon" src="./assets/images/1.png" alt="商品图片">
+            外卖
+        </TabItem>
+        <TabItem id='tab3'>
+            <img slot="icon" src="./assets/images/1.png" alt="商品图片">
+            外卖
+        </TabItem>
+        <TabItem id='tab4'>
+            <img slot="icon" src="./assets/images/1.png" alt="商品图片">
+            外卖
+        </TabItem>
+    </Tabbar>
   </div>
 </template>
 
@@ -12,12 +28,27 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Login from './components/Login.vue'
 import Layout from './components/Layout.vue'
+import Tabbar from './components/common/Tabbar/index.vue'
+import TabItem from './components/common/Tabbar/TabItem.vue'
 export default {
   name: 'app',
   components: {
     HelloWorld,
     Login,
-    Layout
+    Layout,
+    Tabbar,
+    TabItem
+  },
+  data(){
+    return{
+      select:"tab1"
+    }
+  },
+  methods:{
+    addLister(id){
+      console.log(id)
+      this.select = id
+    }
   }
 }
 </script>
