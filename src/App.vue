@@ -21,7 +21,8 @@
             外卖
         </TabItem>
     </Tabbar>
-    <Toast></Toast>
+    <Register />
+    <Toast />
   </div>
 </template>
 
@@ -31,6 +32,7 @@ import Login from './components/Login.vue'
 import Layout from './components/Layout.vue'
 import Tabbar from './components/common/Tabbar/index.vue'
 import TabItem from './components/common/Tabbar/TabItem.vue'
+import Register from './components/common/Register.vue'
 import Toast from './components/common/Toast.vue'
 export default {
   name: 'app',
@@ -40,7 +42,8 @@ export default {
     Layout,
     Tabbar,
     TabItem,
-    Toast
+    Toast,
+    Register
   },
   data(){
     return{
@@ -49,7 +52,7 @@ export default {
   },
   methods:{
     addLister(id){
-      console.log(id)
+      // console.log(id)
       this.select = id
     }
   }
