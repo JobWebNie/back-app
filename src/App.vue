@@ -21,6 +21,7 @@
             外卖
         </TabItem>
     </Tabbar>
+    <Toast></Toast>
   </div>
 </template>
 
@@ -30,6 +31,7 @@ import Login from './components/Login.vue'
 import Layout from './components/Layout.vue'
 import Tabbar from './components/common/Tabbar/index.vue'
 import TabItem from './components/common/Tabbar/TabItem.vue'
+import Toast from './components/common/Toast.vue'
 export default {
   name: 'app',
   components: {
@@ -37,7 +39,8 @@ export default {
     Login,
     Layout,
     Tabbar,
-    TabItem
+    TabItem,
+    Toast
   },
   data(){
     return{
