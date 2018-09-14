@@ -1,4 +1,4 @@
-<template>
+﻿<template>
     <div class="n_course">
             <div class="course-name course-text">
                 <span>课程信息</span>
@@ -32,6 +32,7 @@
             <div class="course-name course-text">
                 <span>购买须知</span>
             </div>
+
             <div class="course-article">
                 孟庆江，1937年生，浙江温州人。1965年毕业于中央美术学院国画系人物画专业，师从蒋兆和、叶浅予、刘凌沧等绘画名家。擅长工笔画、人物画，作品《蔡文姬》《长恨歌》等多次获得全国连环画创作评奖大奖殊荣，并被中国美术馆收藏。
                 历任人民美术出版社专职画家、《连环画报》主编、《中国艺术》副主编，享受国务院特殊津贴。
